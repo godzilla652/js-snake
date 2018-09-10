@@ -1,0 +1,108 @@
+hr, body, h1{
+  margin: 0
+}
+.row{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
+}
+.row.info{
+  width: 155px;
+  padding: 0;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}
+.main_title{
+  text-align: center;
+  font-size: 34px;
+  height: 5vh;
+}
+.game_container{
+  width: 100%;
+  display: flex;
+}
+.game_container #game_monitor, .game_container #info{
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+.game_container #game_monitor{
+}
+.game_container #game_monitor{
+  width: 65%;
+  height: 95vh;
+}
+.game_container #info{
+  width: 35%;
+  height: 95vh;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 22px;
+}
+.game_container #info div{
+  text-align: center;
+}
+.b{
+  margin-top: 175px;
+  font-weight: bold;
+  font-size: 48px;
+}
+.score{
+  margin-top: 15px;
+  font-size: 80px;
+  color: #555;
+}
+
+
+.brick{
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  border: 1px solid #222;
+  box-sizing: border-box;
+}
+.brick.active .brick_inside{
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 1;
+}
+.brick .brick_inside{
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  opacity: 0.8;
+}
+.brick .brick_inside.food{
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  opacity: 0.8;
+}
+
+
+#game_monitor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gamerow{
+  display: flex;
+}
+.bordered{
+  border: 1px solid black;
+}
+#next_figure .row{
+  padding: 0
+}
+#next_figure{
+  border: 1px solid black;
+}
+
+
+a{
+  font-size: 25px;
+}

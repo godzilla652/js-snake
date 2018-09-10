@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SNAKE</title>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- main title -->
+    <div class="row">
+      <h1 class="main_title">CLASSIC_SNAKELIKE_GAME</span></h1>
+      <div class="row">
+      <a id="start" href="javascript:;  " style="margin-right: 55px">Start</a>
+      <a id="stop" href="javascript:;  " style="margin-right: 55px">Stop</a>
+      <a id="restart" href="javascript:;  " style="margin-right: 55px">Restart</a>
+      <a id="controls" href="javascript:;  ">Controls</a>
+      </div>
+    </div>
+  <!-- main title -->
+
+  <!-- game space -->
+  <div class="game_container">
+    <div id="game_monitor">
+      <div class="bordered">
+        <div class="gamerow" id="_0">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_1">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_2">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_3">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_4">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_5">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_6">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_7">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_8">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_9">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_10">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_11">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_12">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_13">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_14">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_15">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_16">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_17">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_18">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+        <div class="gamerow" id="_19">
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+          <div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div><div class="brick"><div class="brick_inside"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info -->
+    <div id="info" class="col">
+                <div>
+                <div class="b">SCORE</div>
+                <div id="score" class="score">0</div>
+                </div>
+                <br />
+                </div>
+                <br />
+                <br />
+    </div>
+    <!-- info -->
+  </div>
+  <!-- game space -->
+</body>
+</html>
