@@ -8,7 +8,7 @@ function sizer(){
 document.addEventListener('DOMContentLoaded', controls)
 function controls(){
   //controls
-  let controls_string = "p - UP,   l - left,    ; - DOWN,    ' - LEFT"
+  let controls_string = "p - up"+'          '+"l - left"+'          '+"; - down"+'          '+"'- right"+'          '+"SPACE - START"
   let controls_link = document.getElementById('controls')
   controls_link.onclick = ()=>{alert(controls_string)}
   //restart
@@ -80,6 +80,13 @@ function game(){
       }
       if(event.keyCode == 222){
         moveright()
+      }
+      if(event.keyCode == 32){
+        if(started){stopGame()}
+        else{
+          startGame();
+          started = true
+        }
       }
   }
 
@@ -184,6 +191,7 @@ function snakeAlgorithm(){
 
 function stopGame(){
   clearInterval(gameInterval)
+  started = false
 }
 function startGame(){
   let food = []
@@ -317,7 +325,9 @@ snakeEndSound()
 let start_link = document.getElementById('start')
 start_link.onclick = ()=>{
   if(started){return}
-  startGame();started = true}
+  startGame();
+  started = true
+}
 //stop
 let stop_link = document.getElementById('stop')
 stop_link.onclick = ()=>{stopGame()}
