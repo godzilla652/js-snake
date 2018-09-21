@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', sizer)
 function sizer(){
-  if(window.innerWidth < 1366 || window.innerHeight < 675){
+  if(window.innerWidth < 1300 || window.innerHeight < 625){
     let body = document.getElementsByTagName('body')
     body[0].innerHTML = 'WIDTH>=1366, HEIGHT>= 675 ONLY...'
   }
